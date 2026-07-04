@@ -61,6 +61,6 @@ public class TransactionListener {
                 );
 
         transactionRepository.save(record);
-       
+
     }
 }
