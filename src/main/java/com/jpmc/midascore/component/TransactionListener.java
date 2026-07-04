@@ -7,7 +7,7 @@ import com.jpmc.midascore.repository.TransactionRepository;
 import com.jpmc.midascore.repository.UserRepository;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
-
+import java.util.Objects;
 @Component
 public class TransactionListener {
 
@@ -61,5 +61,6 @@ public class TransactionListener {
                 );
 
         transactionRepository.save(record);
+       
     }
 }
